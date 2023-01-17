@@ -10,7 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = {"src\\test\\resources\\SearchPage.feature"},
 		
-		glue = {"steps"}
+		glue = {"steps", "hooks"},
+		
+		plugin = "pretty",
+		
+		dryRun = true
+		
+		
 		
 		
 		)

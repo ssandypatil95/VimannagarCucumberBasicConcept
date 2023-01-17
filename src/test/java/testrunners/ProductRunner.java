@@ -8,13 +8,18 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\Orders.feature"},
+		features = {"src\\test\\resources\\Product.feature"},
 		
-		glue = {"steps", "hooks"}
+		glue = {"steps", "hooks"},
+		
+		plugin = "pretty",
+		
+		tags = "not @functional"
+	
 				
+		
 		)
 
-
-public class AmazonOrderRunner {
+public class ProductRunner {
 
 }
