@@ -9,7 +9,7 @@ public class MyHooks {
 	
 	
 	
-	@Before(order = 1)
+	@Before("@smoke")
 	public void beforeHook()
 	{
 		System.out.println("Before hook");
@@ -28,20 +28,20 @@ public class MyHooks {
 	}
 	
 
-	@Before(order = 2)
+	@Before("@regression")
 	public void beforeHook1()
 	{
 		System.out.println("Before hook1");
 	}
 	
-	@After(order = 2)
+	@After("@regression")
 	public void afterHook1()
 	{
 		System.out.println("After hook1");
 	}
 	
 	
-	@After(order = 1)
+	@After("@regression")
 	public void afterHook()
 	{
 		System.out.println("After hook");

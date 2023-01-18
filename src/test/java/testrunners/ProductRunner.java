@@ -14,7 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 		
 		plugin = "pretty",
 		
-		tags = "not @functional"
+		tags = "@smoke"
+		
 	
 				
 		
